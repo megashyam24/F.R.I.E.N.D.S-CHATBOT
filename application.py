@@ -9,7 +9,7 @@ import re
 app = Flask(__name__, template_folder='templates')
 
 # Configure Gemini API
-api_key = "AIzaSyBUZOyn_j2mjHxoYw6Yn8XzJ6DTrli88fc"
+api_key = "API_KEY"
 if not api_key:
     raise ValueError("GEMINI_API_KEY environment variable not set. Please set it before running.")
 genai.configure(api_key=api_key)
