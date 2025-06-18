@@ -1,0 +1,25 @@
+body {
+    scroll-behavior: smooth;
+}
+.chat-container {
+    max-height: 60vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #8B5CF6 #E5E7EB;
+}
+.chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+.chat-container::-webkit-scrollbar-track {
+    background: #E5E7EB;
+}
+.chat-container::-webkit-scrollbar-thumb {
+    background-color: #8B5CF6;
+    border-radius: 4px;
+}
+.character-card {
+    transition: transform 0.2s;
+}
+.character-card:hover {
+    transform: scale(1.05);
+}
