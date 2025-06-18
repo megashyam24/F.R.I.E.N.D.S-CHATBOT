@@ -1,5 +1,7 @@
 Flask
+gunicorn
 pandas
-chromadb
 sentence-transformers
 google-generativeai
+chromadb==0.4.14
+pysqlite3-binary  # Forces newer SQLite required by chromadb
