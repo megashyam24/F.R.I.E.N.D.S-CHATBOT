@@ -259,8 +259,8 @@ def run_chatbot(collection):
 
 # Load dataset and setup vector DB globally
 try:
-    df = load_dataset(r'D:\aws-integrate\training-ai\Friends_script.csv')
-    collection = setup_vector_db(df, persist_directory=r'D:\aws-integrate\training-ai\chroma_db')
+    df = load_dataset('Friends_script.csv')
+    collection = setup_vector_db(df, persist_directory='chroma_db')
 except Exception as e:
     print(f"Startup error: {str(e)}")
     collection = None
