@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: friends-chatbot
+    env: python
+    buildCommand: pip install -r requirement.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: GEMINI_API_KEY
+        value: "AIzaSyBUZOyn_j2mjHxoYw6Yn8XzJ6DTrli88fc"
